@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-c6s3mgqv7*5=4cw81)@)z&h4(tiin_m4@s-=w*)qv%vv+%gf7&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://takeoutdb.onrender.com']
+ALLOWED_HOSTS = ['takeoutdb.onrender.com']
 
 
 # Application definition
