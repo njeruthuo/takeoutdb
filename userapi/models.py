@@ -7,9 +7,9 @@ from django.contrib.auth.models import User
 
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
-    phone_number = models.IntegerField()
-    gender = models.CharField(max_length=10)
-    date_of_birth = models.DateField()
+    phone_number = models.IntegerField(null=True, blank=True)
+    gender = models.CharField(max_length=10, null=True, blank=True)
+    date_of_birth = models.DateField(null=True, blank=True)
 
     def __str__(self):
         return self.user.username
